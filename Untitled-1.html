@@ -5,28 +5,58 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      body {
+        background: linear-gradient(80deg,black,yellow);   
+        color: aliceblue;     
+      }
+    </style>
   <title>webworker</title>
 </head>
 
 <body>
   <div>
-    <input type="number" id="inputNumber" placeholder="Digite um número" />
-    <button onclick="calculateSquare()">Calcular quadrado</button>
+    <span>Calcular Quadrado:</span>
+    <input type="number" 
+    id="inputNumber" 
+    placeholder="Digite um número" />
+    <button type="button"
+     class="btn btn-primary"
+      onclick="calculateSquare()">
+      Calcular quadrado
+    </button>
     <p id="result"></p>
   </div>
 
   <div>
-    <span>Base do Triangulo:</span><input type="number" id="triangleBase">
-    <span>Altura do Triangulo:</span><input type="number" id="triangleHeight">
-    <button onclick="calcularArea()">Calcular Area</button>
+    <span>Base do Triangulo:</span>
+    <input 
+    type="number"
+     id="triangleBase"
+     placeholder="Digite um número">
+    <span>Altura do Triangulo:</span>
+    <input type="number" id="triangleHeight" placeholder="Digite um número" >
+    <button type="button" class="btn btn-primary"
+     onclick="calcularArea()">
+     Calcular Area
+    </button>
     <p id="resultCalculoArea"></p>
   </div>
   <div>
-    <input type="number" id="inputNumberFatorial">
-    <button onclick="calculoDoFatorial()">Calcular Fatorial</button>
+    <span>Calcular Fatorial:</span>
+    <input type="number" 
+    id="inputNumberFatorial"
+    placeholder="Digite um número">
+    <button 
+    onclick="calculoDoFatorial()"
+    type="button" 
+    class="btn btn-primary">
+     Calcular Fatorial
+    </button>
     <p id="ResultadoFatorial"></p>
   </div>
 </body>
 <script src="main.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>
